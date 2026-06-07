@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Katalog — by.anara</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="../css/style.css" />
+        <link rel="stylesheet" href="../css/katalog.css" />
+    </head>
+    <body>
+        <header class="navbar" id="navbar">
+            <div class="navbar__logo">
+                <a href="../index.html">
+                    <img
+                        src="../images/logo anara.jpg"
+                        alt="by.anara logo"
+                        class="navbar__logo-img"
+                    />
+                    <span class="navbar__logo-text">by.anara</span>
+                </a>
+            </div>
+            <nav class="navbar__nav">
+                <ul class="navbar__links">
+                    <li><a href="../index.html#koleksi">Koleksi</a></li>
+                    <li><a href="../index.html#lookbook">Lookbook</a></li>
+                    <li><a href="../index.html#tentang">Tentang</a></li>
+                    <li><a href="../index.html#kontak">Kontak</a></li>
+                </ul>
+            </nav>
+            <div class="navbar__actions">
+                <button class="navbar__cart" aria-label="Keranjang">
+                    <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                    >
+                        <path
+                            d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"
+                        />
+                        <line x1="3" y1="6" x2="21" y2="6" />
+                        <path d="M16 10a4 4 0 01-8 0" />
+                    </svg>
+                </button>
+            </div>
+        </header>
+
+        <main class="katalog-page">
+            <div class="katalog-hero">
+                <p class="section-tag">Semua Produk</p>
+                <h1 class="section-title">Koleksi by.anara</h1>
+                <p class="section-sub">Temukan hijab yang sempurna untukmu</p>
+            </div>
+
+            <!-- Filter -->
+            <div class="katalog-filter">
+                <button class="filter-btn active" data-filter="all">
+                    Semua
+                </button>
+                <button class="filter-btn" data-filter="voile">Voile</button>
+                <button class="filter-btn" data-filter="linen">Linen</button>
+                <button class="filter-btn" data-filter="jersey">Jersey</button>
+            </div>
+
+            <!-- Grid Produk -->
+            <div class="product-grid katalog-grid">
+                <!-- Tambahkan produk di sini sesuai kebutuhan -->
+                <div class="product-card" data-category="voile">
+                    <div class="product-card__img-wrap">
+                        <span class="product-card__badge">Best Seller</span>
+                        <img
+                            src="../images/sample6.jpg"
+                            alt="Anara Voile Nude"
+                            class="product-card__img"
+                        />
+                        <div class="product-card__img-placeholder">
+                            Foto Produk
+                        </div>
+                    </div>
+                    <div class="product-card__info">
+                        <p class="product-card__name">Anara Voile — Nude</p>
+                        <p class="product-card__price">Rp 185.000</p>
+                        <a href="produk.html" class="btn btn--outline btn--sm"
+                            >Lihat Detail</a
+                        >
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="linen">
+                    <div class="product-card__img-wrap">
+                        <img
+                            src="../images/sample7.jpg"
+                            alt="Anara Linen Mocha"
+                            class="product-card__img"
+                        />
+                        <div class="product-card__img-placeholder">
+                            Foto Produk
+                        </div>
+                    </div>
+                    <div class="product-card__info">
+                        <p class="product-card__name">Anara Linen — Mocha</p>
+                        <p class="product-card__price">Rp 210.000</p>
+                        <a href="produk.html" class="btn btn--outline btn--sm"
+                            >Lihat Detail</a
+                        >
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="jersey">
+                    <div class="product-card__img-wrap">
+                        <img
+                            src="../images/sample8.jpg"
+                            alt="Anara Jersey Cream"
+                            class="product-card__img"
+                        />
+                        <div class="product-card__img-placeholder">
+                            Foto Produk
+                        </div>
+                    </div>
+                    <div class="product-card__info">
+                        <p class="product-card__name">Anara Jersey — Cream</p>
+                        <p class="product-card__price">Rp 155.000</p>
+                        <a href="produk.html" class="btn btn--outline btn--sm"
+                            >Lihat Detail</a
+                        >
+                    </div>
+                </div>
+
+                <!-- Tambahkan produk baru di bawah sini dengan pola yang sama -->
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="footer__left">
+                <span class="footer__logo">by.anara</span>
+                <p class="footer__tagline">Elegan dalam Setiap Balutan</p>
+            </div>
+            <div class="footer__links">
+                <a href="../index.html#koleksi">Koleksi</a>
+                <a href="../index.html#tentang">Tentang</a>
+                <a href="../index.html#kontak">Kontak</a>
+            </div>
+            <div class="footer__social">
+                <a href="#" aria-label="Instagram">
+                    <svg
+                        width="18"
+                        height="18"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                    >
+                        <rect x="2" y="2" width="20" height="20" rx="5" />
+                        <circle cx="12" cy="12" r="4" />
+                        <circle
+                            cx="17.5"
+                            cy="6.5"
+                            r="1"
+                            fill="currentColor"
+                            stroke="none"
+                        />
+                    </svg>
+                </a>
+            </div>
+            <div class="footer__copy">
+                <p>© 2025 by.anara — All rights reserved</p>
+            </div>
+        </footer>
+
+        <script src="../js/main.js"></script>
+        <script>
+            // Filter produk berdasarkan kategori
+            const filterBtns = document.querySelectorAll(".filter-btn");
+            const cards = document.querySelectorAll(
+                ".product-card[data-category]",
+            );
+
+            filterBtns.forEach((btn) => {
+                btn.addEventListener("click", () => {
+                    filterBtns.forEach((b) => b.classList.remove("active"));
+                    btn.classList.add("active");
+
+                    const filter = btn.dataset.filter;
+                    cards.forEach((card) => {
+                        if (
+                            filter === "all" ||
+                            card.dataset.category === filter
+                        ) {
+                            card.style.display = "block";
+                        } else {
+                            card.style.display = "none";
+                        }
+                    });
+                });
+            });
+        </script>
+    </body>
+</html>

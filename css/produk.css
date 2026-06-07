@@ -1,0 +1,193 @@
+/* =============================================
+   by.anara — Produk Detail Page Styles
+   ============================================= */
+
+.produk-page {
+    margin-top: var(--navbar-h);
+    padding: 3rem;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Breadcrumb */
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 12px;
+    color: var(--text-muted);
+    margin-bottom: 2.5rem;
+    margin-top: calc(var(--navbar-h) + 1rem);
+}
+.breadcrumb a {
+    color: var(--text-muted);
+    transition: color var(--transition);
+}
+.breadcrumb a:hover {
+    color: var(--brown);
+}
+.breadcrumb span {
+    color: var(--cream-deeper);
+}
+
+/* Detail Layout */
+.produk-detail {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: start;
+}
+
+/* Gallery */
+.gallery-main {
+    position: relative;
+    background: var(--cream);
+    border-radius: var(--radius-sm);
+    aspect-ratio: 3/4;
+    overflow: hidden;
+    margin-bottom: 0.75rem;
+}
+.gallery-main img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.gallery-placeholder {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    color: var(--brown-light);
+}
+
+.gallery-thumbs {
+    display: flex;
+    gap: 0.5rem;
+}
+.thumb {
+    width: 72px;
+    height: 72px;
+    border-radius: 2px;
+    overflow: hidden;
+    cursor: pointer;
+    border: 1.5px solid transparent;
+    transition: border-color var(--transition);
+}
+.thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.thumb.active {
+    border-color: var(--brown);
+}
+
+/* Info */
+.produk-kategori {
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--brown-light);
+    margin-bottom: 0.5rem;
+}
+.produk-nama {
+    font-family: var(--font-display);
+    font-size: 34px;
+    font-weight: 400;
+    color: var(--brown-dark);
+    margin-bottom: 0.75rem;
+    line-height: 1.2;
+}
+.produk-harga {
+    font-size: 20px;
+    color: var(--brown);
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.5px;
+}
+
+.produk-desc {
+    border-top: 0.5px solid rgba(125, 90, 60, 0.15);
+    border-bottom: 0.5px solid rgba(125, 90, 60, 0.15);
+    padding: 1.25rem 0;
+    margin-bottom: 1.5rem;
+}
+.produk-desc p {
+    font-size: 14px;
+    color: var(--text-muted);
+    margin-bottom: 0.75rem;
+}
+.produk-desc ul {
+    padding-left: 1.25rem;
+}
+.produk-desc ul li {
+    font-size: 13px;
+    color: var(--text-muted);
+    margin-bottom: 4px;
+    list-style: disc;
+}
+
+/* Pilihan Warna */
+.pilihan-label {
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-bottom: 0.75rem;
+}
+
+.warna-options {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+.warna-btn {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: border-color var(--transition);
+    outline-offset: 3px;
+}
+.warna-btn.active {
+    border-color: var(--brown);
+}
+
+/* CTA */
+.produk-cta {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+}
+
+/* Shipping */
+.produk-shipping {
+    background: var(--cream);
+    border-radius: var(--radius-sm);
+    padding: 1rem 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+.produk-shipping p {
+    font-size: 13px;
+    color: var(--text-muted);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .produk-detail {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    .produk-page {
+        padding: 1.5rem;
+    }
+    .breadcrumb {
+        margin-top: calc(var(--navbar-h) + 0.5rem);
+    }
+}

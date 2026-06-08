@@ -252,7 +252,9 @@ ul {
 
 /* Mobile Nav */
 .mobile-nav {
-    display: none;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
     position: fixed;
     top: var(--navbar-h);
     left: 0;
@@ -278,7 +280,7 @@ ul {
     color: var(--brown);
 }
 .mobile-nav.open {
-    display: block;
+  max-height: 300px;
 }
 
 /* =============================================

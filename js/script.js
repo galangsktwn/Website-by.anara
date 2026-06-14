@@ -18,10 +18,12 @@ const mobileNav = document.getElementById("mobileNav");
 
 hamburger.addEventListener("click", () => {
     mobileNav.classList.toggle("open");
+    hamburger.classList.toggle("open");
 });
 
 function closeMobileNav() {
     mobileNav.classList.remove("open");
+    hamburger.classList.remove("open");
 }
 
 /* ---------- Fade-up on scroll ---------- */

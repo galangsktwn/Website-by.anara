@@ -2,6 +2,16 @@
    by.anara — Main JavaScript
    ============================================= */
 
+/* ---------- Dark mode toggle ---------- */
+const themeToggle = document.getElementById("themeToggle");
+
+themeToggle.addEventListener("click", () => {
+    const current = document.documentElement.getAttribute("data-theme");
+    const next = current === "dark" ? "light" : "dark";
+    document.documentElement.setAttribute("data-theme", next);
+    localStorage.setItem("byanara-theme", next);
+});
+
 /* ---------- Navbar scroll effect ---------- */
 const navbar = document.getElementById("navbar");
 window.addEventListener("scroll", () => {
